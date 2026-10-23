@@ -1,5 +1,5 @@
 <script setup>
-import { Bars2Icon, Bars3Icon } from '@heroicons/vue/16/solid';
+import { Bars3Icon } from '@heroicons/vue/16/solid';
 import { ref } from 'vue';
 import { RouterLink, useRoute } from 'vue-router';
 
@@ -27,7 +27,6 @@ const isParentActive = (paths) => {
 
 <template>
     <div class="w-full">
-        <!-- NAVBAR DESKTOP -->
         <div class="fixed right-0 top-0 left-0 bg-white flex items-center justify-between py-4 px-6 md:px-16 lg:px-24 xl:px-32 shadow-xl z-50">
             <RouterLink to="/" class="font-bold text-2xl">ZR-<span class="text-orange-500 uppercase">Builders</span> </RouterLink>
             <ul class="hidden lg:flex items-center gap-5 relative">
@@ -58,19 +57,14 @@ const isParentActive = (paths) => {
             </button>
         </div>
 
-        <!-- NAVBAR MOBILE -->
         <div v-if="mobileOpen" class="lg:hidden bg-white shadow-lg px-6 py-4 fixed top-[60px] left-0 right-0 z-40">
 
             <RouterLink to="/" :class="isActiveRoute('/')" @click="closeMenu" class="block py-2 font-semibold">Beranda</RouterLink>
 
             <div>
-                <button 
-                :class="isParentActive(['/about', '/tata-kelola', '/sertifikat', '/partner'])"
-                @click="aboutOpen = !aboutOpen" 
-                class="block w-full text-left py-2 font-semibold flex justify-between"
-                >
-                Perusahaan
-                <span>▼</span>
+                <button :class="isParentActive(['/about', '/tata-kelola', '/sertifikat', '/partner'])" @click="aboutOpen = !aboutOpen" class="block w-full text-left py-2 font-semibold flex justify-between">
+                    Perusahaan
+                    <span>▼</span>
                 </button>
 
                 <div v-if="aboutOpen" class="pl-4 border-l mt-2">
@@ -86,10 +80,8 @@ const isParentActive = (paths) => {
             <RouterLink to="/kontak" :class="isActiveRoute('/kontak')" @click="closeMenu" class="block py-2 font-semibold text-slate-700">Kontak</RouterLink>
         </div>
     </div>
-    <!-- Close Outside Navbar -->
     <div v-if="mobileOpen" @click.self="closeMenu" class="fixed inset-0"></div>
 
-    <!-- Close Outside Dropdown -->
     <div v-if="aboutOpen" @click.self="closeAbout" class="fixed inset-0"></div>
     <router-view/>
 </template>
