@@ -16,7 +16,7 @@ Didesain modern, responsif, dan mudah dikustomisasi untuk kebutuhan perusahaan k
 
 ## 1. Clone Repository
 ```bash 
-git clone https://github.com/zackyhermawan/company-profile-contractor.git
+git clone https://github.com/zackyhermawan/frontend-company-profile-contractor.git
 cd company-profile-contractor
 ```
 
@@ -35,16 +35,5 @@ Server akan berjalan di
 ```bash
 http://localhost:5173
 ```
-
-## Lisensi & Penggunaan
-Source code ini sepenuhnya frontend only, bebas diintegrasikan dengan backend apa pun seperti:
-- Laravel
-- Node.js
-- Express
-- PHP Native
-- API
-
-## Dukungan
-Jika mengalami kendala instalasi atau ingin kustomisasi tambahan, silakan hubungi saya.
 
 
