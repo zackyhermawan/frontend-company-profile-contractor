@@ -24,11 +24,7 @@ defineProps({
 
 <template>
     <div class="relative w-full h-[300px]">
-        <img 
-            :src="image"
-            alt="Construction Site Background"
-            class="absolute inset-0 w-full h-full object-cover object-center"
-        />
+        <img :src="image" alt="Construction Site Background" class="absolute inset-0 w-full h-full object-cover object-center"/>
 
         <div class="absolute inset-0 bg-black/40"></div>
 

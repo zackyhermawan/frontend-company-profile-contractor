@@ -4,95 +4,11 @@ import Footer from '../components/Footer.vue';
 import HeaderAbout from '../components/HeaderAbout.vue';
 import { ref } from 'vue';
 import { XMarkIcon } from '@heroicons/vue/16/solid';
+import { ListDirektur, listKomisaris } from '../data/services.js';
 
 const activeTab = ref('komisaris')
 const showModal = ref(false)
 const selectedPerson = ref({})
-
-const listKomisaris = [
-    {
-        id: 1,
-        name: 'Joko Haryanto',
-        jabatan: 'Komisaris Utama',
-        image: 'https://i.pinimg.com/1200x/ab/51/27/ab512756caf4217944240a59aaacd0a0.jpg',
-        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
-    },
-    {
-        id: 2,
-        name: 'Michael',
-        jabatan: 'Wakil Komisaris Utama',
-        image: 'https://i.pinimg.com/1200x/39/6c/74/396c741c3d37ad0199ac220d16169e3e.jpg',
-        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
-    },
-    {
-        id: 3,
-        name: 'Jefri',
-        jabatan: 'Komisaris',
-        image: 'https://i.pinimg.com/1200x/df/0a/20/df0a2049a88366c1e84ee71e565143cb.jpg',
-        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
-    },
-    {
-        id: 4,
-        name: 'Suprianto',
-        jabatan: 'Komisaris',
-        image: 'https://i.pinimg.com/1200x/7a/78/68/7a7868d0a50534f9759244b98d3f6535.jpg',
-        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
-    },
-    {
-        id: 5,
-        name: 'Ahmad',
-        jabatan: 'Komisaris',
-        image: 'https://i.pinimg.com/736x/99/8e/5c/998e5c14d82488f249103493507bbcf8.jpg',
-        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
-    },
-]
-
-const ListDirektur = [
-    {
-        id: 1,
-        name: 'Joko Haryanto',
-        jabatan: 'President Director & CEO',
-        image: 'https://i.pinimg.com/1200x/ab/51/27/ab512756caf4217944240a59aaacd0a0.jpg',
-        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
-    },
-    {
-        id: 2,
-        name: 'Michael',
-        jabatan: 'Finance Commercial Director',
-        image: 'https://i.pinimg.com/1200x/39/6c/74/396c741c3d37ad0199ac220d16169e3e.jpg',
-        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
-    },
-    {
-        id: 3,
-        name: 'Jefri',
-        jabatan: 'People, Culture, & Sustainability Director',
-        image: 'https://i.pinimg.com/1200x/df/0a/20/df0a2049a88366c1e84ee71e565143cb.jpg',
-        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
-    },
-    {
-        id: 4,
-        name: 'Suprianto',
-        jabatan: 'COO Buisness Unit Asset Solutions',
-        image: 'https://i.pinimg.com/1200x/7a/78/68/7a7868d0a50534f9759244b98d3f6535.jpg',
-        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
-    },
-    {
-        id: 5,
-        name: 'Ahmad',
-        jabatan: 'COO Buisness Unit Green Energy Development',
-        image: 'https://i.pinimg.com/736x/99/8e/5c/998e5c14d82488f249103493507bbcf8.jpg',
-        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
-    },
-    {
-        id: 6,
-        name: 'John',
-        jabatan: 'COO Buisness Unis Engineering & Construction',
-        image: 'https://i.pinimg.com/736x/99/8e/5c/998e5c14d82488f249103493507bbcf8.jpg',
-        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
-    },
-]
-
-
 
 const openModal = (person)=> {
     selectedPerson.value = person
@@ -106,22 +22,22 @@ const closeModal = ()=> {
 </script>
 
 <template>
-    <div class="">
+    <div>
         <HeaderAbout image="/assets/about/hero_profile_perusahaan.jpg" title="Perusahaan" breadcrumb="Profil Perusahaan"/>
         <div class="px-6 md:px-16 lg:px-24 xl:px-32 py-20">
             <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
                 <div class="flex flex-col">
                     <h1 class="text-2xl md:text-4xl font-semibold text-slate-800 mb-5">Profile Perusahaan</h1>
-                    <p class="text-gray-600 tracking-wider text-sm leading-normal mb-4">ZR-Builders adalah perusahaan konstruksi yang berfokus pada penyediaan layanan pembangunan berkualitas tinggi untuk sektor perumahan, komersial, dan industri. Sejak berdiri, kami berkomitmen memberikan hasil yang kuat, aman, dan berstandar tinggi melalui perencanaan matang serta penggunaan teknologi konstruksi modern.</p>
+                    <p class="text-gray-600 tracking-wider text-sm leading-normal mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum culpa in magnam praesentium pariatur animi? Reiciendis maxime, earum dignissimos, beatae sapiente ex ab delectus quisquam eaque nulla libero. Possimus, rem!.</p>
 
-                    <p class="text-gray-600 tracking-wider text-sm leading-normal mb-4">Dengan tim yang terdiri dari tenaga ahli berpengalaman, kami selalu mengutamakan ketelitian dalam setiap tahap pekerjaan, mulai dari perencanaan, pengawasan, hingga penyelesaian proyek. Pendekatan ini menjadikan setiap proyek yang kami tangani memiliki kualitas yang konsisten dan dapat diandalkan.</p>
+                    <p class="text-gray-600 tracking-wider text-sm leading-normal mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas asperiores earum rem excepturi! Nisi enim consectetur modi! Atque natus dolor fugiat voluptatum non doloremque molestias soluta mollitia ipsa voluptas.</p>
 
-                    <p class="text-gray-600 tracking-wider text-sm leading-normal mb-4">ZR-Builders juga menjunjung tinggi nilai integritas dan transparansi. Kami percaya bahwa hubungan baik dengan klien dibangun melalui komunikasi yang jelas, proses yang jujur, dan penyelesaian pekerjaan tepat waktu. Oleh karena itu, kami selalu memastikan setiap klien mendapatkan informasi lengkap terkait perkembangan proyek mereka.</p>
+                    <p class="text-gray-600 tracking-wider text-sm leading-normal mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tenetur assumenda molestiae fuga! Neque, libero aut. Maxime eum suscipit esse dolor distinctio et eaque, iusto nam delectus, iure nemo velit.</p>
 
-                    <p class="text-gray-600 tracking-wider text-sm leading-normal mb-4">Ke depan, kami berambisi menjadi mitra konstruksi yang semakin dipercaya dan berkembang, dengan terus melakukan inovasi serta meningkatkan standar layanan. Dengan pengalaman, keahlian, dan komitmen yang kuat, ZR-Builders siap mewujudkan berbagai kebutuhan konstruksi secara profesional dan berkelanjutan.</p>
+                    <p class="text-gray-600 tracking-wider text-sm leading-normal mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed veritatis iusto aspernatur, fugit id eveniet delectus optio nostrum quas possimus in quos nihil. Molestiae, quos sed temporibus culpa delectus eos quam, inventore quaerat dolor quibusdam, non voluptas! Voluptate doloribus accusantium accusamus harum voluptates, velit eligendi? Nemo natus magni exercitationem sapiente?</p>
                 </div>
                 <div class="w-full h-full rounded-2xl">
-                    <img src="/assets/about/img_profile_perusahaan.jpg" alt="" class="w-full h-full object-cover rounded-2xl">
+                    <img src="/assets/about/profile_perusahaan/img_profile_perusahaan.jpg" alt="" class="w-full h-full object-cover rounded-2xl">
                 </div>
             </div>
 
@@ -147,7 +63,7 @@ const closeModal = ()=> {
             <h1 class="text-slate-800 font-semibold text-2xl md:text-4xl text-center mb-5">Legalitas Perusahaan</h1>
 
             <div class="w-full h-full">
-                <img src="/assets/about/company_legality_profile_perusahaan.png" alt="" class="w-full h-full">
+                <img src="/assets/about/profile_perusahaan/company_legality_profile_perusahaan.png" alt="" class="w-full h-full">
             </div>
         </div>
 
@@ -156,27 +72,16 @@ const closeModal = ()=> {
                 <h1 class="text-slate-800 text-2xl md:text-4xl font-semibold text-center">Our Leadership</h1>
                 
                 <div class="flex justify-center gap-1 mt-10 bg-orange-100 w-fit mx-auto rounded-full">
-                    <button
-                        @click="activeTab = 'komisaris'"
-                        :class="activeTab === 'komisaris'
-                        ? 'cursor-pointer font-semibold bg-orange-500 text-white px-12 py-2 rounded-full transition-all duration-200'
-                        : 'cursor-pointer font-semibold text-orange-600 px-12 py-2 transition-all duration-200'"
-                    >
+                    <button @click="activeTab = 'komisaris'" :class="activeTab === 'komisaris' ? 'cursor-pointer font-semibold bg-orange-500 text-white px-12 py-2 rounded-full transition-all duration-200' : 'cursor-pointer font-semibold text-orange-600 px-12 py-2 transition-all duration-200'">
                         Komisaris
                     </button>
 
-                    <button
-                        @click="activeTab = 'direktur'"
-                        :class="activeTab === 'direktur'
-                        ? 'cursor-pointer font-semibold bg-orange-500 text-white px-12 py-2 rounded-full transition-all duration-200'
-                        : 'cursor-pointer font-semibold text-orange-600 px-12 py-2 transition-all duration-200'"
-                    >
+                    <button @click="activeTab = 'direktur'" :class="activeTab === 'direktur' ? 'cursor-pointer font-semibold bg-orange-500 text-white px-12 py-2 rounded-full transition-all duration-200' : 'cursor-pointer font-semibold text-orange-600 px-12 py-2 transition-all duration-200'">
                         Direktur
                     </button>
                 </div>
                 
                 <div class="mt-10">
-                    <!-- Komisaris -->
                     <div v-if="activeTab === 'komisaris'">
                         <div class="flex gap-5 overflow-x-auto pb-4 lg:grid lg:grid-cols-5 lg:gap-5 lg:overflow-visible">
                             <div v-for="item in listKomisaris" :key="item.id" @click="openModal(item)" class="flex flex-col min-w-[280px] lg:min-w-full group transition-all duration-300 cursor-pointer hover:bg-orange-400/85 rounded-2xl">
@@ -191,7 +96,6 @@ const closeModal = ()=> {
                         </div>
                     </div>
 
-                    <!-- Direktur -->
                     <div v-if="activeTab === 'direktur'">
                         <div class="flex gap-5 overflow-x-auto pb-4 lg:grid lg:grid-cols-6 lg:gap-5 lg:overflow-visible">
                             <div v-for="item in ListDirektur" :key="item.id" @click="openModal(item)" class="flex flex-col min-w-[280px] lg:min-w-full group transition-all duration-300 cursor-pointer hover:bg-orange-400/85 rounded-2xl">
@@ -223,11 +127,7 @@ const closeModal = ()=> {
             </div>
         </div>
 
-        <!-- Modal Komisaris -->
-         <div
-            v-if="showModal"
-            class="fixed inset-0 bg-black/50 flex items-center justify-center z-[999] p-4"
-        >
+         <div v-if="showModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-[999] p-4">
             <div class="bg-white max-w-4xl w-full rounded-3xl overflow-hidden relative p-6 md:p-10">
                 <button @click="closeModal" class="absolute top-0 right-2 p-2 cursor-pointer">
                     <XMarkIcon class="w-7 h-7"/>
@@ -248,8 +148,7 @@ const closeModal = ()=> {
                 </div>
             </div>
         </div>
-
-
+        
         <Footer/>
     </div>
 

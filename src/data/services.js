@@ -88,3 +88,204 @@ export const listLayanan = [
         image: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
 ]
+
+export const ListDirektur = [
+    {
+        id: 1,
+        name: 'Joko Haryanto',
+        jabatan: 'President Director & CEO',
+        image: 'assets/about/profile_perusahaan/person1.jpg',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
+    },
+    {
+        id: 2,
+        name: 'Michael',
+        jabatan: 'Finance Commercial Director',
+        image: 'assets/about/profile_perusahaan/person2.jpg',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
+    },
+    {
+        id: 3,
+        name: 'Jefri',
+        jabatan: 'People, Culture, & Sustainability Director',
+        image: 'assets/about/profile_perusahaan/person3.jpg',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
+    },
+    {
+        id: 4,
+        name: 'Suprianto',
+        jabatan: 'COO Buisness Unit Asset Solutions',
+        image: 'assets/about/profile_perusahaan/person4.jpg',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
+    },
+    {
+        id: 5,
+        name: 'Ahmad',
+        jabatan: 'COO Buisness Unit Green Energy Development',
+        image: 'assets/about/profile_perusahaan/person5.jpg',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
+    },
+    {
+        id: 6,
+        name: 'John',
+        jabatan: 'COO Buisness Unis Engineering & Construction',
+        image: 'assets/about/profile_perusahaan/person5.jpg',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
+    },
+]
+
+export const listKomisaris = [
+    {
+        id: 1,
+        name: 'Joko Haryanto',
+        jabatan: 'Komisaris Utama',
+        image: 'assets/about/profile_perusahaan/person1.jpg',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
+    },
+    {
+        id: 2,
+        name: 'Michael',
+        jabatan: 'Wakil Komisaris Utama',
+        image: 'assets/about/profile_perusahaan/person2.jpg',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
+    },
+    {
+        id: 3,
+        name: 'Jefri',
+        jabatan: 'Komisaris',
+        image: 'assets/about/profile_perusahaan/person3.jpg',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
+    },
+    {
+        id: 4,
+        name: 'Suprianto',
+        jabatan: 'Komisaris',
+        image: 'assets/about/profile_perusahaan/person4.jpg',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
+    },
+    {
+        id: 5,
+        name: 'Ahmad',
+        jabatan: 'Komisaris',
+        image: 'assets/about/profile_perusahaan/person5.jpg',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laboriosam doloremque facilis quae vero consequatur odio nam necessitatibus est, assumenda aspernatur ad ipsa natus possimus quos porro doloribus, in sapiente',
+    },
+]
+
+export const listPartners = [
+    {
+        id: 1,
+        img: 'assets/about/partner/1.png'
+    },
+    {
+        id: 2,
+        img: 'assets/about/partner/2.png'
+    },
+    {
+        id: 3,
+        img: 'assets/about/partner/3.png'
+    },
+    {
+        id: 4,
+        img: 'assets/about/partner/4.png'
+    },
+    {
+        id: 5,
+        img: 'assets/about/partner/5.png'
+    },
+    {
+        id: 6,
+        img: 'assets/about/partner/6.png'
+    },
+    {
+        id: 7,
+        img: 'assets/about/partner/7.png'
+    },
+    {
+        id: 8,
+        img: 'assets/about/partner/8.png'
+    },
+    {
+        id: 9,
+        img: 'assets/about/partner/9.png'
+    },
+    {
+        id: 10,
+        img: 'assets/about/partner/10.png'
+    },
+    {
+        id: 11,
+        img: 'assets/about/partner/11.png'
+    },
+    {
+        id: 12,
+        img: 'assets/about/partner/12.png'
+    },
+    {
+        id: 13,
+        img: 'assets/about/partner/13.png'
+    },
+    {
+        id: 14,
+        img: 'assets/about/partner/14.png'
+    },
+    {
+        id: 15,
+        img: 'assets/about/partner/15.png'
+    },
+    {
+        id: 16,
+        img: 'assets/about/partner/16.png'
+    },
+]
+
+export const listProject = [
+    {
+        id: 1,
+        title: 'Renovasi Rumah - Bandung',
+        location: 'Indonesia',
+        sector: 'Power & Industrial',
+        expertise: 'Engineering, Procurement, and Contruction',
+        image: 'https://images.unsplash.com/photo-1640416198776-e24939eb9fdc?w=600&auto=format&fit=crop&q=60'
+    },
+    {
+        id: 2,
+        title: 'Pembuatan Jembatan - Bandung',
+        location: 'Indonesia',
+        sector: 'Power & Industrial',
+        expertise: 'Engineering, Procurement, and Contruction',
+        image: 'https://images.unsplash.com/photo-1640416198776-e24939eb9fdc?w=600&auto=format&fit=crop&q=60'
+    },
+    {
+        id: 3,
+        title: 'Pembangunan Ruko - Batang',
+        location: 'Indonesia',
+        sector: 'Power & Industrial',
+        expertise: 'Engineering, Procurement, and Contruction',
+        image: 'https://images.unsplash.com/photo-1640416198776-e24939eb9fdc?w=600&auto=format&fit=crop&q=60'
+    },
+    {
+        id: 4,
+        title: 'Pembangunan Ruko - Batang',
+        location: 'Indonesia',
+        sector: 'Power & Industrial',
+        expertise: 'Engineering, Procurement, and Contruction',
+        image: 'https://images.unsplash.com/photo-1640416198776-e24939eb9fdc?w=600&auto=format&fit=crop&q=60'
+    },
+    {
+        id: 5,
+        title: 'Pembangunan Ruko - Batang',
+        location: 'Indonesia',
+        sector: 'Power & Industrial',
+        expertise: 'Engineering, Procurement, and Contruction',
+        image: 'https://images.unsplash.com/photo-1640416198776-e24939eb9fdc?w=600&auto=format&fit=crop&q=60'
+    },
+    {
+        id: 6,
+        title: 'Pembangunan Ruko - Batang',
+        location: 'Indonesia',
+        sector: 'Power & Industrial',
+        expertise: 'Engineering, Procurement, and Contruction',
+        image: 'https://images.unsplash.com/photo-1640416198776-e24939eb9fdc?w=600&auto=format&fit=crop&q=60'
+    },
+]

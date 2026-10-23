@@ -5,11 +5,7 @@ import { RouterLink } from 'vue-router'; // Hanya perlu di komponen yang berisi 
 
 <template>
     <div class="relative w-full min-h-screen">
-        <img 
-            src="https://images.unsplash.com/photo-1599707254554-027aeb4deacd?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0"
-            alt="Construction Site Background"
-            class="absolute inset-0 w-full h-full object-cover object-center"
-        />
+        <img src="https://images.unsplash.com/photo-1599707254554-027aeb4deacd?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Construction Site Background" class="absolute inset-0 w-full h-full object-cover object-center"/>
 
         <div class="absolute inset-0 bg-black/60"></div>
 
@@ -37,6 +33,4 @@ import { RouterLink } from 'vue-router'; // Hanya perlu di komponen yang berisi 
             </div>
         </div>
     </div>
-
-
 </template>

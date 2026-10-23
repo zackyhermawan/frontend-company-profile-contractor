@@ -1,5 +1,4 @@
 <script setup>
-import { RouterLink } from 'vue-router';
 import Footer from '../components/Footer.vue';
 import HeaderAbout from '../components/HeaderAbout.vue';
 import { EnvelopeIcon, GlobeAltIcon, HomeIcon, PhoneIcon } from '@heroicons/vue/16/solid';
@@ -7,7 +6,7 @@ import { EnvelopeIcon, GlobeAltIcon, HomeIcon, PhoneIcon } from '@heroicons/vue/
 </script>
 
 <template>
-    <div class="">
+    <div>
         <HeaderAbout image="/assets/contact/hero_contact.jpg" title="Kontak" breadcrumb="Kontak"/>
 
         <div class="py-20 px-6 md:px-16 lg:px-24 xl:px-32">

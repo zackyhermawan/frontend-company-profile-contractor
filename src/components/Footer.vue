@@ -6,8 +6,6 @@ import { AtSymbolIcon, MapPinIcon, PhoneIcon } from '@heroicons/vue/16/solid';
 <template>
     <div class="w-full bg-orange-50">
         <div class="py-20 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 bg-orange-50">
-
-            <!-- TOP GRID -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
                 <div class="flex flex-col">
                     <h1 class="text-3xl font-semibold mb-4 text-slate-800">
@@ -44,23 +42,22 @@ import { AtSymbolIcon, MapPinIcon, PhoneIcon } from '@heroicons/vue/16/solid';
                     <p class="text-gray-500">Tetap terhubung dengan kami melalui platform berikut.</p>
 
                     <div class="flex items-center gap-4 mt-4">
-                        <a class="w-7 h-7 sm:w-8 sm:h-8">
+                        <a class="w-7 h-7 sm:w-8 sm:h-8 cursor-pointer">
                             <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" class="w-full h-full">
                         </a>
-                        <a class="w-7 h-7 sm:w-8 sm:h-8">
+                        <a class="w-7 h-7 sm:w-8 sm:h-8 cursor-pointer">
                             <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" class="w-full h-full">
                         </a>
-                        <a class="w-7 h-7 sm:w-8 sm:h-8">
+                        <a class="w-7 h-7 sm:w-8 sm:h-8 cursor-pointer">
                             <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" class="w-full h-full">
                         </a>
-                        <a class="w-7 h-7 sm:w-8 sm:h-8">
+                        <a class="w-7 h-7 sm:w-8 sm:h-8 cursor-pointer">
                             <img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" class="w-full h-full">
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- BOTTOM CONTACT CARDS -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
                 <div class="group flex items-center gap-3 border hover:bg-orange-500 hover:border-transparent transition-all duration-300 border-gray-400 rounded-2xl p-5">
                     <div class="p-3 bg-orange-500 group-hover:bg-orange-200 rounded-full transition-all duration-300">
@@ -97,7 +94,6 @@ import { AtSymbolIcon, MapPinIcon, PhoneIcon } from '@heroicons/vue/16/solid';
             </div>
         </div>
 
-        <!-- COPYRIGHT -->
         <div class="bg-orange-500 rounded-tl-full rounded-tr-full text-center py-4 text-gray-200 text-sm">
             &copy; Copyright ZR-Builders. All rights reserved.
         </div>
