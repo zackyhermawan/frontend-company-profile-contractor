@@ -1,4 +1,4 @@
-# Company Profile Contractor – Frontend (Vue.js)
+# Company Profile Contractor – Frontend
 
 Project ini merupakan website company profile contractor berbasis Vue.js (Frontend Only).
 Didesain modern, responsif, dan mudah dikustomisasi untuk kebutuhan perusahaan kontraktor, portofolio, maupun proyek klien.
