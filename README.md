@@ -5,7 +5,7 @@ Didesain modern, responsif, dan mudah dikustomisasi untuk kebutuhan perusahaan k
 
 ### Fitur Utama
 - Homepage profesional dengan banner dan section informasi
-- Perusahaan (profil perusahaan, tata kelola, sertifikat, partner)
+- Tentang (profil perusahaan, tata kelola, sertifikat, partner)
 - Layanan Kontraktor lengkap (renovasi, bangun rumah, interior, dll)
 - Halaman Portfolio/Project dengan foto & deskripsi
 - Halaman Kontak (form tampilan saja, belum terhubung ke backend)
